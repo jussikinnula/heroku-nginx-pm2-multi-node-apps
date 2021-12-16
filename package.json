@@ -1,0 +1,26 @@
+{
+  "name": "heroku-nginx-pm2-multi-node-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2-runtime start ./config/ecosystem.config.js --env production",
+    "dev": "pm2-runtime start ./config/ecosystem.config.js",
+    "app1": "node ./apps/app1/index.js",
+    "app2": "node ./apps/app2/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jussikinnula/heroku-nginx-pm2-multi-node-apps.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jussikinnula/heroku-nginx-pm2-multi-node-apps/issues"
+  },
+  "homepage": "https://github.com/jussikinnula/heroku-nginx-pm2-multi-node-apps#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^5.1.2"
+  }
+}
